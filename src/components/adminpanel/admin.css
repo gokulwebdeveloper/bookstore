@@ -1,0 +1,146 @@
+article{
+    cursor: pointer;
+}
+  
+  article a::after {
+    position: absolute;
+    inset-block: 0;
+    inset-inline: 0;
+    cursor: pointer;
+    content: "";
+  }
+  
+  article h2 {
+    margin: 0 0 18px 0;
+  }
+  
+  figure {
+    margin: 0;
+    padding: 0;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+  }
+  
+  article img {
+    max-width: 100%;
+    transform-origin: center;
+    transform: scale(var(--img-scale));
+    transition: transform 0.4s ease-in-out;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .article-body {
+    padding: 24px;
+  }
+  
+  article a {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: #28666e;
+  }
+  
+  article a:focus {
+    outline: 1px dotted #28666e;
+  }
+  
+  article a .icon {
+    min-width: 24px;
+    width: 24px;
+    height: 24px;
+    margin-left: 5px;
+    transform: translateX(var(--link-icon-translate));
+    opacity: var(--link-icon-opacity);
+    transition: all 0.3s;
+  }
+  
+  article:has(:hover, :focus) {
+    --img-scale: 1.1;
+    --title-color: #28666e;
+    --link-icon-translate: 0;
+    --link-icon-opacity: 1;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  }
+  
+  
+  
+
+  .articles {
+    grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+    gap: 24px;
+    max-width: 1200px;
+    margin-inline: auto;
+    padding-inline: 24px;
+    display: grid;
+  }
+
+  .delete{
+    margin:0px 20px;
+    background-color: red;
+  }
+   
+  .registration-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .registration-form label {
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .registration-form input {
+    margin-bottom: 15px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .registration-form button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin:20px 0px 0px;
+  }
+  .registration-form button.cancel {
+    background-color: #a12020;
+  }
+  .registration-form button:hover {
+    background-color: #45a049;
+  }
+  .registration-form button.cancel:hover {
+    background-color: #330d0d;
+  }
+
+  .add-new{
+    display:block;
+    float:right;
+    margin:10px 20px;
+    padding:10px;
+    background-color:chocolate;
+    width:auto;
+  }
+  .header{
+    float: right;
+    margin: 10px 20px;
+    padding: 15px 30px;
+    display: block;
+    width:100%;
+  }
+  .err-msg{
+    float:left;
+    display: block;
+    width: 100%;
+    font-size: 15px;
+    color:#a12020;
+  }

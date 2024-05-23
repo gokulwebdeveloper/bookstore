@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+ ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #331c1c; 
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }  
+
+  header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+   nav ul{
+    list-style-type: none;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-evenly;
+   }
+   nav ul li{
+    padding: 10px;
+    font-size: large;
+    cursor: pointer;
+   }
+   nav ul li a{
+     color: #fff;
+     text-decoration: none;
+   }
+  nav button {
+    background-color: #555;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  
+  nav button:hover {
+    background-color: #777;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  .membergallery h2{
+    text-align: center;
+  }
+  .gallery {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    max-height: 80vh;
+    width:250px;
+    margin: 0px auto;
+  }
+  
+  .member {
+    position: relative;
+    margin-bottom: 20px;
+  }
+  
+  .member img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .member .username {
+    color: #fff;
+    background-color: #000000b3;
+    border-radius: 3px;
+    padding: 5px;
+    position: absolute;
+    bottom: 10px;
+    left: 12px;
+    width: 82%;
+    word-wrap: break-word;
+    text-align: center;
+  }
+  
+  .member .books-read {
+    color: #fff;
+    background-color: #000000b3;
+    border-radius: 3px;
+    width: 91%;
+    max-width: 100%;
+    padding: 10px;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 92%;
+  }
+  
+  .member:hover .books-read {
+    display: block;
+  }
+  
+  p {
+    margin-top: 20px;
+  }
+
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+}
+
+.login-form {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.error-text {
+    color: red;
+    margin-bottom: 15px;
+}
+
+.admin-panel{
+   width:90%;
+   margin:0px auto;
+}

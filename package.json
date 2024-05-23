@@ -1,0 +1,29 @@
+{
+  "name": "book_website",
+  "version": "1.0.0",
+  "description": "Display book details and their authour",
+  "scripts": {
+    "start": "parcel public/index.html",
+    "build": "parcel build public/index.html",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "devDependencies": {
+    "parcel": "^2.8.2",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-modal": "^3.16.1",
+    "react-router-dom": "^6.23.1"
+  },
+  "browserslist": [
+    "last 10 versions"
+  ],
+  "author": "",
+  "license": "ISC"
+}
